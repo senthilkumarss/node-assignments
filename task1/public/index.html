@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <title>File Upload</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+</head>
+<body>
+<script>
+var socket = io.connect('http://localhost:3000');
+
+</script>
+<div id='content'>
+    <form action="/upload" enctype="multipart/form-data" method="post">
+
+            File Upload
+
+        <input type="file" name="upload" multiple="multiple"><br>
+        <br>
+        <input id='send-button' type='submit' value='Upload'/>
+    </form>
+
+</div>
+</body>
+</html>
+
